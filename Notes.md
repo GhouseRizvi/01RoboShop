@@ -21,3 +21,7 @@ so docker recommends to create own bridge network ro establish communication bet
 
 docker network create roboshop
 this will create a private bridged network, the advantage here is we can isolate the containers which belongs to this network pool , from getting assigned to outerpools.
+so other project will not get communicated with it, so this is safe
+can comunicate using names in the network.
+
+
