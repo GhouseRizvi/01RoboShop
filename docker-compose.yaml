@@ -3,7 +3,7 @@ version: '3.8'
 networks:
   roboshop:
     driver: bridge
-    
+
 services:
   mongodb:
     image: mongodb:v1
@@ -18,9 +18,12 @@ services:
     container_name: web
     depends_on:
       - catalogue
+  redis:
+    image: redis
   user:
     image: user:v1
     container_name: user
     depends_on:
       - mongodb
+      - redis
 
