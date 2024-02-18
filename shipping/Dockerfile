@@ -3,7 +3,7 @@
 #
 FROM debian:10 AS build
 
-RUN apt-get update -ye
+RUN apt-get update -y
 RUN apt-get install maven -y
 
 WORKDIR /opt/shipping
